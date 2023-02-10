@@ -1,4 +1,4 @@
-# Instagram project part 2: Analysis on reels' data pulled from part 1
+# Instagram project part 2: Analysis on reels and photos data pulled from part 1 and transfered into a dashboard
 
 import pandas as pd
 from pandas import Series, DataFrame
@@ -6,7 +6,7 @@ import numpy as np
 import plotly.express as px
 import streamlit as st
 
-
+print('holllll')
 
 # Import Reels data file created in part 1
 reels_data = pd.read_csv("Reels_Data.csv")
@@ -504,3 +504,4 @@ if Photosbutton:
                 st.plotly_chart(satlikesplot, use_container_width=True)
         elif option == 'Sunday':
                 st.plotly_chart(sunlikesplot, use_container_width=True)
+

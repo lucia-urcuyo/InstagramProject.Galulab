@@ -7,8 +7,6 @@ import streamlit as st
 # Ask user for Instagram ID (a code of numbers, example: 17841446768661835.)
 # There is one ID for every account.
 #print('Enter your Instagram account ID:')
-
-
 #instaID = input()
 instaID = 17841446768661835
 
@@ -17,6 +15,7 @@ instaID = 17841446768661835
 # print('Enter your access token:')
 #accesstoken = input()
 accesstoken = 'EAAP6OFrPKd8BALjqUiX6rMDKj6t0dJo8LmInrPONdlq7bZBjY0VirTO04MC0zYyg3Q5SacWa4XVLtVxVnL8pGKvzrNZAJUOiXNiycK6yZBhLoJgkVeUkSAueEFpHLQYDx0i6JTZAVNXlPurZAZAWHMUGTpEG5UEN14Wp1vGXPq7aolz8i5YfEnicFj3kcaW9uNcAuPb6QZC8E4B88auC2K9eYsscdQXXCW0p96f0eqHQNoDDvS2QG7kx5e4haTZCF9MZD'
+
 # Function 1: Asks for a URL and returns media IDs into a dataframe
 def link_to_mediaID(link):
     try:

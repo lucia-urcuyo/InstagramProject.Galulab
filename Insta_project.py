@@ -4,17 +4,18 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-# Ask user for Instagram ID (a code of numbers, example: 17841446768661835.)
-# There is one ID for every account.
-#print('Enter your Instagram account ID:')
-#instaID = input()
-instaID = 17841446768661835
+accesstoken= ''
 
-# Ask user for an Access Token (extracted from the facebook developers website.)
-# It changes every 60 minutes.
-# print('Enter your access token:')
-#accesstoken = input()
-accesstoken = 'EAAP6OFrPKd8BALjqUiX6rMDKj6t0dJo8LmInrPONdlq7bZBjY0VirTO04MC0zYyg3Q5SacWa4XVLtVxVnL8pGKvzrNZAJUOiXNiycK6yZBhLoJgkVeUkSAueEFpHLQYDx0i6JTZAVNXlPurZAZAWHMUGTpEG5UEN14Wp1vGXPq7aolz8i5YfEnicFj3kcaW9uNcAuPb6QZC8E4B88auC2K9eYsscdQXXCW0p96f0eqHQNoDDvS2QG7kx5e4haTZCF9MZD'
+while accesstoken== '':
+    st.write('Enter your Instagram account ID:')
+    instaID = st.text_input('Instagram account ID')
+
+    st.write('Enter your access token:')
+    accesstoken = st.text_input('Access token')
+
+
+#instaID = 17841446768661835
+#accesstoken = 'EAAP6OFrPKd8BAN8rXOZBrYZAMo1GtElOYYBaqm4TZBb6eMagqPIlEq7XNHwnzlZCyFIvR2zaNXhogOLAo9EgVr0t1Ao8POVkbrdMeiXi5dkK6FsJqlQPCKaZB6acz3uY4wu1CZAzz9vZCh6fkQ43HWBdaA5gQyjITO2gOJffYY9PGdZAt351s93GvbDnWhu8qWXVtdI8v2TM0tD58ltS9xQyosvG2fLJv6j2wwyvz8OkZA8uCTt3h0uwsc4YzhzrY52MZD'
 
 # Function 1: Asks for a URL and returns media IDs into a dataframe
 def link_to_mediaID(link):
